@@ -1,3 +1,4 @@
+import 'package:codelab_3/pages/splash_page.dart';
 import 'package:flutter/material.dart';
 
 class LandingPage extends StatelessWidget {
@@ -14,7 +15,10 @@ class LandingPage extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
             ),
-          )
+          ),
+          Container(
+            color: mainThemeColor.withOpacity(0.7),
+          ),
         ],
       ),
     );
