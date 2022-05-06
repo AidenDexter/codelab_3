@@ -1,3 +1,4 @@
+import 'package:codelab_3/pages/list_page.dart';
 import 'package:codelab_3/pages/splash_page.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +17,11 @@ class LandingSearchBar extends StatelessWidget {
         children: [
           Text(' Search hotel', style: TextStyle(color: Colors.grey)),
           GestureDetector(
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(builder: (context) => ListPage()),
+              );
+            },
             child: Container(
               width: 30,
               height: 30,
