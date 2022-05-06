@@ -1,3 +1,4 @@
+import 'package:codelab_3/pages/splash_page.dart';
 import 'package:flutter/material.dart';
 
 class LandingSearchBar extends StatelessWidget {
@@ -14,6 +15,18 @@ class LandingSearchBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(' Search hotel', style: TextStyle(color: Colors.grey)),
+          GestureDetector(
+            onTap: () {},
+            child: Container(
+              width: 30,
+              height: 30,
+              child: Icon(Icons.search, color: Colors.white, size: 15),
+              decoration: BoxDecoration(
+                color: mainThemeColor,
+                borderRadius: BorderRadius.circular(25),
+              ),
+            ),
+          ),
         ],
       ),
     );
