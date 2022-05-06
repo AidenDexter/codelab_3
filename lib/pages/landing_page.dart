@@ -1,6 +1,8 @@
 import 'package:codelab_3/pages/splash_page.dart';
 import 'package:flutter/material.dart';
 
+import '../widgets/landing_search_bar.dart';
+
 class LandingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -49,6 +51,7 @@ class LandingPage extends StatelessWidget {
                     fontWeight: FontWeight.bold),
               ),
               SizedBox(height: 20),
+              LandingSearchBar(),
             ],
           ),
         ],
