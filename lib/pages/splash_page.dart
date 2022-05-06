@@ -1,3 +1,4 @@
+import 'package:codelab_3/pages/landing_page.dart';
 import 'package:codelab_3/pages/list_page.dart';
 import 'package:flutter/material.dart';
 
@@ -9,7 +10,7 @@ class SplashPage extends StatelessWidget {
     Future.delayed(const Duration(seconds: 2), () {
       Navigator.of(context).push(
         MaterialPageRoute(
-          builder: (context) => ListPage(),
+          builder: (context) => LandingPage(),
         ),
       );
     });

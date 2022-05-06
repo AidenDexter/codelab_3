@@ -6,8 +6,9 @@ import './pages/landing_page.dart';
 
 void main() {
   runApp(
-    MaterialApp(debugShowCheckedModeBanner: false, home: LandingPage()
-        // SplashPage(),
-        ),
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: SplashPage(),
+    ),
   );
 }
